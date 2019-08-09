@@ -1,0 +1,29 @@
+{
+  "name": "raf-updater",
+  "version": "0.0.1",
+  "description": "requestAnimationFrame based updating mechanism",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "event-target-shim": "^5.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qvick1pro/raf-updater.git"
+  },
+  "keywords": [
+    "requestAnimationFrame"
+  ],
+  "author": "Gleb Volchetskiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qvick1pro/raf-updater/issues"
+  },
+  "homepage": "https://github.com/qvick1pro/raf-updater#readme"
+}
