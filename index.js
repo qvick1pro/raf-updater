@@ -26,7 +26,20 @@ export default class Updater {
       this.paused = true;
     }
   }
-  
+
+  reset() {
+    this.paused = true;
+    this.pauseStartTime = 0;
+
+    this.timeScale = 1;
+
+    Object.keys(this.updatersMap).forEach(key => {
+      delete this.updatersMap[key].updateFunction;
+      delete this.updatersMap[key];
+    });
+    this.updatersMap = {};
+  }
+
   register(name, fn, intervals = false) {
     let updateFunction = (timestamp) => {
       const updater = this.updatersMap[name];
